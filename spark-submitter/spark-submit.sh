@@ -1,0 +1,11 @@
+spark-submit \
+--class ${SPARK_APPLICATION_MAIN_CLASS2} \
+--master ${SPARK_MASTER_URL} \
+ ${SPARK_APPLICATION_JAR_LOCATION2} &
+
+spark-submit \
+--class ${SPARK_APPLICATION_MAIN_CLASS1} \
+--master ${SPARK_MASTER_URL} \
+ ${SPARK_APPLICATION_JAR_LOCATION1}
+
+sleep 200
